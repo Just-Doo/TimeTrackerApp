@@ -1,0 +1,20 @@
+{
+  "name": "timetrackerapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This application helps you manage tasks and track the time spent on each task. ## Setup Instructions 1. Install dependencies for both backend and frontend. 2. Run backend and frontend.",
+  "main": "index.js",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend start",
+    "start": "npm run start:backend & npm run start:frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
