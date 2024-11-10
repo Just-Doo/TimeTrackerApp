@@ -15,7 +15,7 @@ router.post('/verify-phone', async (req, res) => {
     try {
       // Send verification SMS
       const verificationCode = Math.floor(100000 + Math.random() * 900000).toString();
-      await sendSMS(phoneNumber, `01055067291`, `[${verificationCode}] 일단 해, 테스크타이머 `);
+      await sendSMS(phoneNumber, ``, `[${verificationCode}] 일단 해, 테스크타이머 `);
   
       res.status(200).send('Verification code sent successfully.');
     } catch (error) {
